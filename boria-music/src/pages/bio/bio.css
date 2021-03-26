@@ -1,0 +1,25 @@
+.grid-bio {
+    display: grid;
+    grid-template-columns: repeat(3, 10% 10% 10% 60%);
+    grid-template-rows: repeat(1, 15% 15% 10% 40% 20%);
+    background-color: #685e5e;
+
+}
+
+.bio-text {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+img {
+    width: 800px
+
+}
+
+.image {
+    grid-column: 4;
+    grid-row: 1 / 4;
+    
+    
+    
+}

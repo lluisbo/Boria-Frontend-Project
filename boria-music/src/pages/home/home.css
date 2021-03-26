@@ -1,0 +1,61 @@
+.grid-home {
+    display: grid;
+    grid-template-columns: repeat(5, 10% 10% 10% 20% 40%);
+    grid-template-rows: repeat(1, 5% 5% 10% 40% 30%);
+
+}
+
+.navbar {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    display: inline-block;
+    
+    
+    
+}
+
+.boria {
+    grid-column: 5;
+    grid-row: 3;
+    text-align: right;
+    color:black;
+    font-family: 'SpaceMono-Regular';
+    font-size: 10vh;
+    position: relative;
+    
+    
+}
+
+.subtitle {
+    grid-column: 5;
+    grid-row: 3;
+    display: inline; 
+    position: relative;
+    right: 70%; 
+    top: 180% 
+}
+
+.social-links {
+    grid-column: 5;
+    grid-row: 5;
+    text-align: right;
+    position: relative;
+    bottom: 30%;
+
+}
+
+.go-to-album {
+    text-align: right;
+    grid-column: 4;
+    grid-row: 5;
+    position: relative;
+    top: 100%;
+    
+}
+.arrow-down {
+    font-size: 6vh;
+    color: purple;
+}

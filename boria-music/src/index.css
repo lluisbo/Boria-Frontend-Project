@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'SpaceMono-Regular';
+  src: local('SpaveMono-Regular'), url('./fonts/SpaceMono-Regular.ttf') format('truetype')
+}
+
+p {
+  font-family: 'SpaceMono-Regular';
+  font-size: 2vh;
+
+}
+
+.p2{
+  font-size: 3vh;
+
+}
+
+.p3 {
+  color: white;
+
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: 'SpaceMono-Regular';
+  font-size: 2vh;
+
+}
+
+button:hover {
+  color: purple;
+  
+}
