@@ -1,6 +1,8 @@
 import Axios from 'axios'
 import React, {useEffect, useState} from 'react'
-
+import { NavBar } from '../../components/navbar/navBar'
+import { Contact } from '../../components/contact/contact'
+import { Footer } from '../../components/footer/footer'
 
 export const TourDates = () =>{
    const [datesList, setTourDatesList] = useState([]);
@@ -16,8 +18,12 @@ export const TourDates = () =>{
    }, [setTourDatesList])
 
    return (
-      <div className='tour'>
-       <div className='tourdates'>
+   
+   <div id='container'>
+      <header id='header'>
+         <Contact />
+      </header>
+       <main className='main'>
          <h4>TOURDATES:</h4>
             {datesList.length === 0 ? <p>No Events Scheduled at this time Submit to our Mailing List to keep up to date with upcoming events.</p>
             : datesList.map(
@@ -30,7 +36,16 @@ export const TourDates = () =>{
                    {item.tickets}
                </div>
             ))}
-        </div>
+        </main>
+        <aside id='aside'>
+           <NavBar />
+        </aside>
+       <div id='section2'>
+
+       </div>
+       <footer id='footer'>
+          <Footer />
+       </footer>
       </div>
     );
  }

@@ -1,11 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -17,33 +9,5 @@ code {
   src: local('SpaveMono-Regular'), url('./fonts/SpaceMono-Regular.ttf') format('truetype')
 }
 
-p {
-  font-family: 'SpaceMono-Regular';
-  font-size: 2vh;
 
-}
 
-.p2{
-  font-size: 3vh;
-
-}
-
-.p3 {
-  color: white;
-  font-size: 2.5vh;
-
-}
-
-button {
-  background-color: transparent;
-  outline: none;
-  border: none;
-  font-family: 'SpaceMono-Regular';
-  font-size: 2vh;
-
-}
-
-button:hover {
-  color: purple;
-  
-}

@@ -1,0 +1,14 @@
+.flexk-links {
+    display: flex;
+}
+
+p {
+    font-family: 'SpaceMono-Regular';
+    font-size: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+ 

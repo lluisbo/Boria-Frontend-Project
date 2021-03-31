@@ -1,36 +1,45 @@
 import { useSpring, animated} from 'react-spring'
-import './home.css'
-import { Footer } from '../../components/footer/footer'
 import { NavBar } from '../../components/navbar/navBar'
-import {IoIosArrowDown } from 'react-icons/io'
+import { Contact} from '../../components/contact/contact'
+import { Footer} from '../../components/footer/footer'
+import { MediaSociaLinks} from '../../components/mediaSociaLinks/mediaSociaLinks'
+import BORIA from '../../components/assets/BORIA.png'
+
+import './home.css'
 
 export const Home = () => {
-    
-    const fadeInSubtitle = useSpring({config: { duration: 4000}, from: { opacity: 1 }, to: { opacity: 0 }})
-    const fadeInHome = useSpring({config: { duration: 4000}, from: { opacity: 0 }, to: { opacity: 1 }, delay: 2500})
+    const fadeInGreetings = useSpring({config: { duration: 4000}, from: { opacity: 1 }, to: { opacity: 0 }})
+    const fadeInHome = useSpring({config: { duration: 4000}, from: { opacity: 0 }, to: { opacity: 1 }, delay: 3700})
+    const fadeInHeader = useSpring({config: { duration: 3000}, from: { opacity: 0 }, to: { opacity: 1 }, delay: 4500})
     const fadeInLinks = useSpring({config: { duration: 3000}, from: { opacity: 0 }, to: { opacity: 1 }, delay: 3500})
     
     return (
-        <div className='grid-home'>
-            <animated.div  style={fadeInLinks} className='navbar p2'>
-                <NavBar   />
-                    </animated.div>
-                    
-            <div className='boria'>
-                <animated.h2 style={fadeInHome} >BORIA</animated.h2>
-                    </div>
+        <div id='container' >
 
-            <div className=' boria subtitle'>
-                <animated.p className='p2' style={fadeInSubtitle}>WELCOME! TO THE OFFICAL WEBSITE.</animated.p>
-                    </div>
+            <animated.aside className=' aside ' style={fadeInHeader}>
+                <NavBar />
+                    </animated.aside> 
 
-            <animated.div  style={fadeInLinks} className='social-links'>
-                <Footer  ></Footer>
-                    </animated.div>
-
-            <div className='go-to-album'>
-                <IoIosArrowDown className='arrow-down'></IoIosArrowDown>
-                    </div>
+            <animated.header className=' header' style={fadeInHeader}>
+                <Contact  />
+                    </animated.header>
+            <main className='main'>
+                <div className= 'boria-logo'>             
+                    <animated.img  className= 'boria'style={fadeInHome} src={BORIA}>
+                        </animated.img>
+                             </div>   
+            </main>
+            <div id='section2'>
+            <animated.p  className='greetings' style={fadeInGreetings}>
+                    WELCOME! TO THE OFFICAL WEBSITE.
+                    </animated.p>
+            <animated.div className='socialinks' style={fadeInLinks}>
+                <MediaSociaLinks />
+                </animated.div>         
+                </div>
+            <footer className='footer'>
+                <Footer />
+                </footer>
         </div>
     )
 }

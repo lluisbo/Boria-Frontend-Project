@@ -1,0 +1,14 @@
+.flex-icons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 90%;
+    justify-content: space-around;
+    
+}
+
+.icons {
+    color: orange;
+    font-size: 100%;
+    
+}

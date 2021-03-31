@@ -1,0 +1,33 @@
+.modal-grid {
+    display: grid;
+    grid-column: 3 fr;
+    grid-row: 3 fr;
+    background-color: pink;
+    margin:5px
+}
+
+.div-bt-booking {
+    grid-column: 1; 
+    grid-row: 1;
+}
+.div-bt-news {
+    grid-column: 2; 
+    grid-row: 1;
+}
+.div-bt-press {
+    grid-column: 3; 
+    grid-row: 1;
+    
+}
+.div-children {
+    grid-column: 2; 
+    grid-row: 2;
+    
+}
+.div-bt-close {
+    grid-column: 2; 
+    grid-row: 3;
+}
+.bt-modal {
+    
+}

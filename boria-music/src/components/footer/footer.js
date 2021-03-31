@@ -1,17 +1,10 @@
-import React from 'react'
-
-
+import {IoIosArrowDown } from 'react-icons/io'
+import './footer.css'
 export const Footer = () => {
-
+    
     return (
-        <div className='div-link'>
-              <p>Itunes</p>
-              <p>Amazon</p>
-              <p>Spotify</p>
-              <p>Instagram</p>
-              <p>Youtube</p>
-              <p>Twitter</p>
-              <p>Facebook</p>
+        <div className='flex-footer'>
+            <IoIosArrowDown  className='icons'/>
         </div>
     )
 }

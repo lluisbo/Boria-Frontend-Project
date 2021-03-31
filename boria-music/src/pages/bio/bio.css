@@ -1,55 +1,38 @@
-.grid-bio {
-    display: grid;
-    grid-template-columns: repeat(5, 10% 10% 10% 20% 40%);
-    grid-template-rows: repeat(1, 5% 5% 10% 40% 30%);
-    background-color: black;
+
+.bio {
     background-image: url('../../components/assets/lluis1.jpeg');
     background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: top;
-    background-position-x: right;
-   
-
-}
-
-.navbar2 {
-    grid-column: 1;
-    grid-row: 4; 
-    position: relative;
-    top: 30%;
-    right: 50%;
-
-}
-
-.navbar3 {
-    grid-column: 1;
-    grid-row: 5;
-    position: relative;
-    top: 10%;
-   
-}
-
-.vertical-button {
-    color: white;
-    transform: rotate(-90deg);
-    font-size: 7vh;
+    background-attachment: fixed;
+    background-position: center;
     
 }
 
 .bio-text {
-    grid-column: 3;
-    grid-row: 3;
     position: relative;
-    bottom: 10%;
-    
+    left: 3%;
+    bottom: 15%;
+    letter-spacing: 2%;
+    transition: 3.3s; 
+    text-align: left;
+    padding-right: 2%;
 }
 
-.contact-icon {
-    grid-column: 1;
-    grid-row: 6;
-    color: white;
-    position: relative;
-    left: 35%;
-    bottom: 40%;
-    font-size: 5vh;
+.white {
+    color: transparent;
 }
+
+.band-text {
+    position: relative;
+    left: 2%;
+    letter-spacing: 3%;
+    transition: 3.3s; 
+    text-align: left;
+    padding-left: 10%;
+}
+
+
+
+
+
+
+
