@@ -16,30 +16,38 @@ export const Home = () => {
     return (
         <div id='container' >
 
-            <animated.aside className=' aside ' style={fadeInHeader}>
-                <NavBar />
-                    </animated.aside> 
-
-            <animated.header className=' header' style={fadeInHeader}>
+            <animated.header id='header' style={fadeInHeader} >
                 <Contact  />
                     </animated.header>
-            <main className='main'>
-                <div className= 'boria-logo'>             
-                    <animated.img  className= 'boria'style={fadeInHome} src={BORIA}>
+
+            <animated.aside id='aside'style={fadeInHeader} >
+                <NavBar className='navbar'/>
+                    </animated.aside> 
+                    
+            <main id='main'>
+                <div >  
+                
+                        <animated.img  className= 'boria' style={fadeInHome} src={BORIA}>
                         </animated.img>
-                             </div>   
-            </main>
+                               
+                     <animated.p  className='greetings' style={fadeInGreetings}
+                     >
+                      WELCOME! TO THE OFFICAL WEBSITE.
+                      </animated.p>             
+                         </div>   
+                             </main>
+
             <div id='section2'>
-            <animated.p  className='greetings' style={fadeInGreetings}>
-                    WELCOME! TO THE OFFICAL WEBSITE.
-                    </animated.p>
-            <animated.div className='socialinks' style={fadeInLinks}>
-                <MediaSociaLinks />
-                </animated.div>         
-                </div>
-            <footer className='footer'>
+                <animated.div className='socialinks' style={fadeInLinks}>
+                    <MediaSociaLinks />
+                        </animated.div>  
+                            </div>
+                                        
+                    
+
+            <footer id='footer'>
                 <Footer />
-                </footer>
+                    </footer>
         </div>
     )
 }

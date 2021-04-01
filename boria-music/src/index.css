@@ -9,5 +9,13 @@ code {
   src: local('SpaveMono-Regular'), url('./fonts/SpaceMono-Regular.ttf') format('truetype')
 }
 
+h4, h5 {
+  font-family: 'SpaceMono-Regular';
+  color: orange;
+}
 
+ul, li {
 
+  font-size: 70%;
+  color: grey;
+}

@@ -2,9 +2,9 @@
 .btn--vertical--outline {
     background-color: transparent;
     outline: none;
-    border: transparent;
     font-style: 'SpaceMono-Regular';
-    font-size: 60px;
+    font-size: 100%;
     color: grey;
     transform: rotate(-90deg);
+    
 }

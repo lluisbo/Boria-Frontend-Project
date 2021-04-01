@@ -1,27 +1,28 @@
 
 .greetings {
-    display: flex;
-    align-items: baseline;
-    width: 100%;
-    height: 100%;
     position: relative;
-    left: 40%;
+    bottom: 10%;
+    width: 30%;
+    left: 30%;
     
 }
 
 .boria {
-    display: flex;
     position: relative;
-    width: 80%;
+    left:23%;
+    width: 35%;
     border: 10px solid transparent;
     border-spacing: 10%;
-    padding-top: 10%;
+    padding-top: 5%;
+    
+    
 }
 
 .socialinks {
     display: flex;
     position: relative;
-    text-align: right;
+    left: 3%;
+    text-align: left;
     padding: 2%;
 
 }

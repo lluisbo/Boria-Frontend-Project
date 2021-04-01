@@ -1,10 +1,11 @@
 .flexk-links {
     display: flex;
+    text-align: left;
 }
 
 p {
     font-family: 'SpaceMono-Regular';
-    font-size: 80%;
+    font-size: 60%;
 }
 
 a {

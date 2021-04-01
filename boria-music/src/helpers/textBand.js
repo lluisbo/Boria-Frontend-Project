@@ -10,7 +10,7 @@ export const BandText = () =>{
            ref={hoverOnBand}
            style={{color: hovered ? '#ffa500' : !hovered,
            letterSpacing: hovered ? '2.3mm' : '1.0mm',
-           transition: '3.3s'}}
+           transition: '3.3s', textAlign: 'left'}}
         >
             <span style={{ color: upperCaseColorTwo }}>
             BAND</span>

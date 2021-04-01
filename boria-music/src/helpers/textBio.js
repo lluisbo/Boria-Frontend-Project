@@ -9,7 +9,7 @@ export const BioText = () => {
            ref={hoverOnBIO}
             style={{color: isHovered ? '#808080' : !isHovered,
             letterSpacing: isHovered ? '2.3mm' : '1.0mm',
-            transition: '3.3s'}}
+            transition: '3.3s', textAlign: 'left'}}
             >
 
             " A <span style={{ color: upperCaseColor }}>SINGER</span>/ 
@@ -22,7 +22,7 @@ export const BioText = () => {
             <br />right through  
             <br />his acoustic 
             <br /><span style={{ color: upperCaseColor}}>GUITAR</span>  
-            <br />painting<br /> melancholy portraits of 
+            <br />painting melancholy portraits of 
             <br /><span style={{ color: upperCaseColor }}>LIFE</span>,<span style={{ color: upperCaseColor }}>DEATH</span>, and <span style={{ color: upperCaseColor }}> LOVE</span>
             ".
         </p>
